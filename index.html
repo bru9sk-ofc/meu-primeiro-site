@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-br">
+<head> 
+<meta charset="UTF-8">
+
+<title>Confeitaria Gabilê</title>
+
+	<style>
+
+body { background-color: #fdeaea; }
+body {color: #000000; font-family: comic sans ms;
+text-align: center;
+}
+
+
+input, textarea {		/* Esse input é pra modificação do texto */
+padding: 20px;
+border: none;
+border-radius: 20px;
+font-size: 20px;
+outline: none;
+transition: 0.4s;
+}
+
+.foto-gabile {
+    width: 195px;       /* Ajuste a largura como preferir */
+    height: 195px;      /* Ajuste a altura */
+    border-radius: 200%; /* Se quiser que a sua foto fique redondinha! */
+    object-fit: cover;  /* Faz a foto encaixar sem achatar */
+    margin-bottom: 1px;
+}
+
+.service-card { 
+
+background: #ffffff;
+box-shadow: 0 0 15px #004906;
+padding: 2px;    		/* Tamanho da placa */
+border-radius: 48px;    	/* Raio da borda */
+width: 400px;			/* Largura da placa */
+text-align: center;
+margin: 20px auto;		/* Altura da placa */
+border: 2px solid rgb(85, 26, 26);	/* Borda da placa */
+transition: 0.3s; 
+font-size: 20px;
+max-width: 450px;
+width: 90%;
+
+}
+
+.formulario-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Cria espaço entre os blocos automaticamente */
+        margin-top: 30px;
+}
+
+input:hover, #mensagem:hover {
+box-shadow: 0 0 12px #004906;
+transform: translateY(-1px);
+border-radius: 12px;
+border: none;
+transition: 0.4s;
+}
+
+
+button {
+background-color: #ffffff;
+color: rgb(134, 71, 63);
+font-size: 16px;
+font-weight: bold;
+width: 30%;
+max-width: 600px;
+border: none;
+border-radius: 50px;
+transition: 0.4s; /* Faz o movimento ser suave, não um pulo seco */
+box-shadow: 0 5px 15px rgba(0, 46, 8, 0.5);
+padding: 6px;
+}
+
+button:hover {
+box-shadow: 0 0 15px #ffb6c1;	/* Cria um brilho rosa de 15px ao redor */
+background-color: #ffdae0;	/* Opcional: muda a cor do botão para um rosa mais claro */
+cursor: pointer;		/* Garante que a "mãozinha" apareça */
+transform: translatey(-5px); 	/* Faz o botão subir 5 pixels */
+
+	
+}
+
+label {
+font-size: 25px;
+}
+
+.icone-social, .whatsapp-icone, .facebook-icone {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle; /* Alinha o ícone no centro da linha do texto */
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="service-card">
+<img src="download.jpeg" class="foto-gabile" alt="Logo Gabilê">
+<p>O estilo tradicional que nunca sai da moda!</p>
+Número de telefone<br>
+(21)96477-7802
+
+</div>
+
+		
+	<div class="formulario-row">
+	<div class="campo-grupo">
+<label for="nome">Seu Nome:</label><br>
+<input type="text" id="nome" placeholder="Digite seu nome">
+</div>
+
+
+	<div class="campo-grupo">
+<label for="telefone">Telefone:</label><br>
+<input type="text" id="telefone" placeholder="(21) 99999-9999" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+	</div>
+
+	<div class="mensagem">
+<label for=comentario>Como deseja o seu pedido:</label><br>
+<textarea id="mensagem" rows="8" cols="40" placeholder="Escreva aqui..."></textarea><br><br>
+<button type="submit">Enviar Mensagem</button><br><br><br>
+
+
+<div class="social-links">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="icone-social" alt="icone instagram"> <a href="https://www.instagram.com/gabilerenata?igsh=eXYzY2RkcWx4eTNj">INSTAGRAM</a> · 
+            <img src="https://blog.abac.org.br/wp-content/uploads/2021/10/facebook-icone-icon.png" class="facebook-icone" alt="icone-facebook"> <a href="https://www.facebook.com/share/1882e6bDEv/">FACEBOOK</a> · 
+            <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" class="whatsapp-icone" alt="icone whatsapp"> <a href="https://wa.me/5521964777802" Target="_blank">WHATSAPP</a>
+            </div>
+
+
+<p>© 2026 GABILÊ. TODOS OS DIREITOS RESERVADOS.</p>
+
+</div>
+
+</body>
+</html>
