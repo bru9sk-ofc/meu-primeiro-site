@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 
 <title>Confeitaria Gabilê</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<style>
 
@@ -21,14 +21,17 @@ border-radius: 20px;
 font-size: 20px;
 outline: none;
 transition: 0.4s;
+width:100%;             /* Faz o campo ocupar todo o espaço do card */
+box-sizing: border-box; /* Garante que o padding não "estoure" a largura */
 }
 
 .foto-gabile {
     width: 195px;       /* Ajuste a largura como preferir */
-    height: 195px;      /* Ajuste a altura */
     border-radius: 200%; /* Se quiser que a sua foto fique redondinha! */
     object-fit: cover;  /* Faz a foto encaixar sem achatar */
     margin-bottom: 1px;
+    max-width: 100%;    /* A imagem nunca será maior que o card */
+    height: auto;       /* Mantém a proporção sem achatar */
 }
 
 .service-card { 
@@ -39,12 +42,12 @@ padding: 2px;    		/* Tamanho da placa */
 border-radius: 48px;    	/* Raio da borda */
 width: 400px;			/* Largura da placa */
 text-align: center;
-margin: 20px auto;		/* Altura da placa */
 border: 2px solid rgb(85, 26, 26);	/* Borda da placa */
 transition: 0.3s; 
 font-size: 20px;
-max-width: 450px;
-width: 90%;
+max-width: 600px;       /* Mas no PC, não passa de 600px */
+width: 90%;             /* Ocupa 90% da largura da tela do celular */
+margin: 20px auto;      /* Centraliza o card */
 
 }
 
